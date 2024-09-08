@@ -79,7 +79,7 @@ public class chen_p1{
             for (int i: accept){
                 if (i==current_state){
                     String formatted_output = "";
-                    for(int k=0; k<output.size();k++){
+                    for(int k=current_pos; k<output.size();k++){
                         formatted_output = formatted_output + output.get(k);
                     }
                     System.out.println(formatted_output + " accept\n");
@@ -90,7 +90,7 @@ public class chen_p1{
             for (int i: reject){
                 if (i==current_state){
                     String formatted_output = "";
-                    for(int k=0; k<output.size();k++){
+                    for(int k=current_pos; k<output.size();k++){
                         formatted_output = formatted_output + output.get(k);
                     }
                     System.out.println(formatted_output + " reject\n");
@@ -104,7 +104,7 @@ public class chen_p1{
             //no transitions for state
             if (possible_transitions == null){
                 String formatted_output = "";
-                for(int k=0; k<output.size();k++){
+                for(int k=current_pos; k<output.size();k++){
                     formatted_output = formatted_output + output.get(k);
                 }
                 System.out.println(formatted_output + " reject\n");
@@ -131,7 +131,7 @@ public class chen_p1{
             //no symbol
             if (transition.length() == 0){
                 String formatted_output = "";
-                for(int k=0; k<output.size();k++){
+                for(int k=current_pos; k<output.size();k++){
                     formatted_output = formatted_output + output.get(k);
                 }
                 System.out.println(formatted_output + " reject\n");
@@ -157,9 +157,9 @@ public class chen_p1{
             
             transition_num++;
         }
-        
+
         String formatted_output = "";
-        for(int k=0; k<output.size();k++){
+        for(int k=current_pos; k<output.size();k++){
             formatted_output = formatted_output + output.get(k);
         }
         System.out.println(formatted_output + " quit\n");
