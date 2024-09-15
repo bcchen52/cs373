@@ -17,3 +17,5 @@ java chen_p2 LLLL 0000
 java chen_p2 LLLL 01010101
 java chen_p2 LLLL 10101010
 `
+
+This also works when changing the start states, assuming the first character is in {L, R, C} and the other three are in {L, R}.
