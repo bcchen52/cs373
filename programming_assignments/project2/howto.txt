@@ -1,0 +1,19 @@
+In order to run, compile all Java files...
+
+`
+javac Gate.java
+javac Simulate.java
+javac chen_p2.java
+`
+
+Then, run `chen_p2` with the original states and input string as command line arguments in the format...
+`java chen_p2 <INITIAL_STATES> <INPUT STRING>`
+    - The initial states string, ex. "LLLL" must have a length of 4
+
+For example, running the tests in the assignment sheet...
+`
+java chen_p2 LLLL 1111
+java chen_p2 LLLL 0000
+java chen_p2 LLLL 01010101
+java chen_p2 LLLL 10101010
+`
